@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campanha institucional acadêmica da Empresa Ômega.">
+  <title>Ômega | Qualidade e confiança</title>
+  <style>
+    :root {
+      --navy:#073b4c; --teal:#087e8b; --green:#67a85b;
+      --light:#f3f8f7; --text:#26383d; --muted:#61747a; --white:#fff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}
+    header{background:rgba(255,255,255,.97);border-bottom:1px solid #e5eeee;position:sticky;top:0;z-index:5}
+    .nav{max-width:1080px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .brand{font-size:1.4rem;font-weight:800;letter-spacing:1px;color:var(--navy);text-decoration:none}
+    .brand span{color:var(--green)}
+    nav{display:flex;gap:19px;flex-wrap:wrap}
+    nav a{color:var(--navy);font-size:.92rem;font-weight:700;text-decoration:none}
+    nav a:hover{color:var(--green)}
+    .hero{background:linear-gradient(120deg,#eaf5f3,#f8fbfa 60%,#e8f2e6);padding:78px 22px}
+    .hero-inner{max-width:1080px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+    .eyebrow{color:var(--teal);font-size:.8rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+    h1{font-size:clamp(2.3rem,5vw,4.1rem);line-height:1.08;color:var(--navy);margin:14px 0}
+    h1 span{color:var(--green)}
+    .hero p{max-width:600px;color:#52676c;font-size:1.08rem}
+    .btn{display:inline-block;margin-top:15px;padding:12px 20px;border-radius:8px;background:var(--teal);color:white;text-decoration:none;font-weight:700}
+    .hero-card,.panel{background:white;border:1px solid #e1ece9;border-radius:17px;padding:27px;box-shadow:0 12px 32px #073b4c12}
+    .symbol{width:58px;height:58px;display:grid;place-items:center;background:var(--teal);color:white;border-radius:16px;font-size:2rem;font-weight:bold}
+    .hero-card h2{color:var(--navy);margin:14px 0 5px}
+    section{padding:65px 22px}
+    .container{max-width:1080px;margin:auto}
+    .section-title{font-size:clamp(1.8rem,3vw,2.45rem);color:var(--navy);margin:0 0 10px}
+    .intro{max-width:760px;color:var(--muted);margin:0 0 28px}
+    .about{background:var(--light)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .panel{border-left:5px solid var(--green)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .card{background:var(--light);border:1px solid #e4eeee;border-radius:13px;padding:23px}
+    .card h3{color:var(--navy);margin:8px 0}
+    .card p{color:var(--muted);margin:0}
+    .icon{font-size:1.8rem}
+    .partner-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .partner{border:1px solid #e2ecea;border-radius:13px;padding:20px;background:white}
+    .partner h3{color:var(--navy);margin:0 0 5px}
+    .tag{display:inline-block;font-size:.72rem;font-weight:800;color:#397b39;background:#e8f3e5;border-radius:20px;padding:4px 9px;margin-bottom:10px}
+    .partner p{margin:0;color:var(--muted)}
+    .notice{margin-top:20px;background:#fff8e8;border:1px solid #f0dfb6;color:#705a2a;border-radius:10px;padding:14px 16px;font-size:.9rem}
+    .steps{display:grid;gap:13px}
+    .step{display:flex;gap:13px;border:1px solid #e4eeee;border-radius:12px;padding:16px}
+    .number{min-width:33px;height:33px;display:grid;place-items:center;border-radius:50%;background:#e5f1e2;color:#397b39;font-weight:800}
+    .step h3{margin:0 0 3px;color:var(--navy);font-size:1.04rem}
+    .step p{margin:0;color:var(--muted)}
+    .callout{background:var(--navy);color:white;text-align:center;padding:54px 22px}
+    .callout h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:0 0 8px}
+    .callout p{max-width:680px;margin:auto;color:#d8e7e9}
+    footer{background:#052d3a;color:#d8e7e9;text-align:center;padding:22px;font-size:.88rem}
+    footer strong{color:white}
+    @media(max-width:760px){
+      .nav{align-items:flex-start;flex-direction:column}
+      nav{gap:12px}
+      .hero-inner,.two-col{grid-template-columns:1fr}
+      .cards,.partner-grid{grid-template-columns:1fr}
+      .hero{padding:55px 22px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#inicio">Ô<span>MEGA</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#compromissos">Compromissos</a>
+      <a href="#parceiros">Parceiros</a>
+      <a href="#campanha">Campanha</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Nossa qualidade. Nosso compromisso.</div>
+        <h1>Cuidar com qualidade. <span>Agir com transparência.</span></h1>
+        <p>Uma trajetória construída com dedicação merece ser reconhecida. A Ômega trabalha para fortalecer a confiança dos clientes por meio da qualidade, do respeito e da comunicação responsável.</p>
+        <a class="btn" href="#sobre">Conheça a Ômega</a>
+      </div>
+      <div class="hero-card">
+        <div class="symbol">+</div>
+        <h2>Confiança se constrói com atitudes.</h2>
+        <p>Nosso compromisso é oferecer atendimento responsável, ouvir os consumidores e manter uma relação transparente com a comunidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre a Empresa Ômega</h2>
+      <p class="intro">Com mais de 12 anos de atuação no ramo de atendimentos clínicos, a Ômega construiu sua história valorizando a qualidade dos serviços, seus colaboradores e a comunidade onde está presente.</p>
+      <div class="two-col">
+        <div>
+          <h3 style="color:var(--navy)">Uma nova etapa, com transparência</h3>
+          <p>A empresa enfrenta o desafio de recuperar a confiança dos consumidores e fortalecer sua presença no mercado. Esta campanha apresenta um caminho baseado em informação clara, relacionamento e valorização dos serviços.</p>
+          <p>Mais do que divulgar a marca, queremos demonstrar compromisso por meio de ações e resultados.</p>
+        </div>
+        <div class="panel">
+          <strong style="color:var(--navy)">Nossa missão</strong>
+          <p>Promover uma experiência de atendimento pautada pela qualidade, pelo respeito às pessoas e pela responsabilidade com a comunidade.</p>
+          <strong style="color:var(--navy)">Nossa visão</strong>
+          <p>Reconquistar a confiança do público e ser reconhecida pela excelência e pela transparência.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="compromissos">
+    <div class="container">
+      <h2 class="section-title">Nossos compromissos</h2>
+      <p class="intro">Os pilares que orientam esta campanha e a relação da empresa com seus consumidores.</p>
+      <div class="cards">
+        <article class="card"><div class="icon">✓</div><h3>Qualidade</h3><p>Valorizar os serviços prestados, os recursos utilizados e a experiência de cada consumidor.</p></article>
+        <article class="card"><div class="icon">◉</div><h3>Transparência</h3><p>Compartilhar informações oficiais, esclarecer dúvidas e responder à desinformação com responsabilidade.</p></article>
+        <article class="card"><div class="icon">♡</div><h3>Comunidade</h3><p>Dar visibilidade às iniciativas sociais e fortalecer o vínculo com as pessoas da região.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="parceiros">
+    <div class="container">
+      <h2 class="section-title">Nossa rede de confiança</h2>
+      <p class="intro">A qualidade de um serviço também depende de relações responsáveis com fornecedores, parceiros e pessoas que contribuem para o desenvolvimento da empresa.</p>
+      <h3 style="color:var(--navy)">Fornecedores parceiros</h3>
+      <div class="partner-grid">
+        <article class="partner">
+          <span class="tag">Fornecedor fictício</span>
+          <h3>MedPrime Suprimentos</h3>
+          <p>Fornecedor ilustrativo de materiais e insumos para atendimento clínico, com foco em organização e qualidade.</p>
+        </article>
+        <article class="partner">
+          <span class="tag">Fornecedor fictício</span>
+          <h3>TechCare Soluções</h3>
+          <p>Parceiro ilustrativo de equipamentos e soluções tecnológicas para apoiar a modernização dos serviços.</p>
+        </article>
+        <article class="partner">
+          <span class="tag">Fornecedor fictício</span>
+          <h3>Higienix Profissional</h3>
+          <p>Fornecedor ilustrativo de materiais de higiene, limpeza e proteção para ambientes de atendimento.</p>
+        </article>
+        <article class="partner">
+          <span class="tag">Fornecedor fictício</span>
+          <h3>OfficeMais Distribuidora</h3>
+          <p>Parceiro ilustrativo de materiais de escritório e apoio às rotinas administrativas.</p>
+        </article>
+      </div>
+
+      <h3 style="color:var(--navy);margin-top:32px">Sócios e gestão</h3>
+      <div class="partner-grid">
+        <article class="partner">
+          <span class="tag">Personagem fictício do estudo</span>
+          <h3>Luiz Santos</h3>
+          <p>Diretor-geral e responsável pela condução estratégica da Empresa Ômega, conforme o estudo de caso.</p>
+        </article>
+        <article class="partner">
+          <span class="tag">Personagem fictício do projeto</span>
+          <h3>Mariana Costa</h3>
+          <p>Sócia-administradora fictícia, responsável por apoiar a gestão, o relacionamento com clientes e as ações institucionais.</p>
+        </article>
+      </div>
+      <div class="notice"><strong>Nota:</strong> os nomes MedPrime, TechCare, Higienix, OfficeMais e Mariana Costa foram criados exclusivamente para esta atividade escolar. Não representam fornecedores, contratos ou sócios reais. No estudo de caso, apenas Luiz Santos é citado nominalmente como dono da empresa.</div>
+    </div>
+  </section>
+
+  <section id="campanha">
+    <div class="container">
+      <h2 class="section-title">Nossa campanha</h2>
+      <p class="intro">Uma presença digital simples, informativa e próxima dos consumidores.</p>
+      <div class="steps">
+        <div class="step"><div class="number">1</div><div><h3>Compartilhar nossa história</h3><p>Apresentar a trajetória da empresa e os valores que fazem parte de sua atuação.</p></div></div>
+        <div class="step"><div class="number">2</div><div><h3>Informar com responsabilidade</h3><p>Publicar esclarecimentos com base em informações verificáveis e manter canais de comunicação claros.</p></div></div>
+        <div class="step"><div class="number">3</div><div><h3>Valorizar pessoas e comunidade</h3><p>Mostrar iniciativas sociais, ouvir os clientes e incentivar uma relação de confiança.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="callout">
+    <h2>Uma história de qualidade merece ser reconhecida.</h2>
+    <p>Ômega — compromisso com o atendimento, respeito às pessoas e transparência em cada relação.</p>
+  </section>
+</main>
+<footer><strong>ÔMEGA</strong> · Campanha institucional acadêmica<br>Estudo de caso — Empresa Ômega</footer>
+</body>
+</html>
